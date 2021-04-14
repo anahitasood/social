@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1 , shrink-to-fit=no">
+    <title>Social Square</title>
+  </head>
+  <body>
+
+        <!--header-->
+    {% include 'snippet/header.html' %}
+    {% include 'snippet/base_css.html' %}
+    {% include 'snippet/base_js.html' %}
+    <style type = "text/css">
+      .main{
+        min-height : 100vh;
+        heigth : 100%;
+      }
+    </style>
+
+
+    <!--body-->
+    <div class="main">
+      {% block content %}
+
+      {% endblock content %}
+  </div>
+
+    <!--footer-->
+    {% include 'snippet/footer.html' %}
+  </body>
+</html>
